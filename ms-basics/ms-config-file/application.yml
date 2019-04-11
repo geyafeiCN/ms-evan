@@ -1,5 +1,7 @@
 spring:
-
+  cloud:
+    config:
+      profile: dev  # dev：开发 test：测试 prod：生产，统一配置中心环境标签
 
 # Spring Cloud Eureka Client 通用配置
 eureka:
