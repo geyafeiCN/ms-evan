@@ -8,7 +8,7 @@ eureka:
     healthCheckUrlPath: /health
   client:
     serviceUrl:
-      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:9001}/eureka/
+      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:9000}/eureka/
 
 #*Mapper.xml所在的路径
 mybatis:
