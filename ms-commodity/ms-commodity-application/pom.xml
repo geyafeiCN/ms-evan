@@ -12,6 +12,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>ms-commodity-application</name>
     <description>商品服务应用层</description>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>

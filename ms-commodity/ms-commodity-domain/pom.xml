@@ -3,31 +3,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.4.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>com.jyusun.evan.commodity</groupId>
+        <artifactId>ms-commodity</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.jyusun.evan.commodity</groupId>
+
     <artifactId>ms-commodity-domain</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ms-commodity-domain</name>
     <description>商品服务领域层</description>
 
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
-
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>com.jyusun.evan.commodity</groupId>
+            <artifactId>ms-commodity-infrastructure</artifactId>
+            <version>${ms-commodity.version}</version>
         </dependency>
     </dependencies>
 

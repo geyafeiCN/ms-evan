@@ -12,6 +12,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>ms-order</name>
     <description>订单服务</description>
+    <packaging>pom</packaging>
 
     <modules>
         <module>ms-order-interfaces</module>
