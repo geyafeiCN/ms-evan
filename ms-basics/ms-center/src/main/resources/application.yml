@@ -1,11 +1,9 @@
-# 服务运行端口
 server:
-  port: 9000
+  port: 9000 # 服务运行端口
 
-# 服务名称
 spring:
   application:
-    name: ms-center
+    name: ms-center # 服务名称
 
 # 服务注册中心配置
 eureka:

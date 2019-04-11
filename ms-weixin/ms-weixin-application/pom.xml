@@ -28,18 +28,22 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
-        <!-- feign  -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-feign -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-feign</artifactId>
             <version>1.4.6.RELEASE</version>
         </dependency>
 
-        <!--Spring-Cloud-Eureka-Client依赖-->
+        <!--Spring-Cloud-Eureka-Client 服务注册客户端依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-            <version>2.1.1.RELEASE</version>
+        </dependency>
+        <!-- Spring-Cloud-Config-Client 配置中心客户端依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-client</artifactId>
         </dependency>
 
     </dependencies>

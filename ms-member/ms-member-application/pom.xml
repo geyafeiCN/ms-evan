@@ -13,12 +13,35 @@
     <description>会员应用服务层</description>
 
     <dependencies>
+
         <dependency>
             <groupId>com.jyusun.evan.member</groupId>
             <artifactId>ms-member-interfaces</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${ms-member.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.jyusun.evan.member</groupId>
+            <artifactId>ms-member-domain</artifactId>
+            <version>${ms-member.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-feign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
+        <!--Spring-Cloud-Eureka-Client 服务注册客户端依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <!-- Spring-Cloud-Config-Client 配置中心客户端依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-client</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

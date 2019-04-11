@@ -4,6 +4,7 @@ import com.jyusun.evan.core.common.message.Message;
 import com.jyusun.evan.core.common.rest.BaseController;
 import com.jyusun.evan.weixin.interfaces.facade.vo.TestVO;
 import com.jyusun.evan.weixin.interfaces.rest.WeiXinTestRestController;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -18,6 +19,14 @@ public class WeiXinTestRestControllerImpl extends BaseController<TestVO> impleme
     @Override
     public Message weiXinTestRest() {
         return success("TestRest请求成功");
+    }
+
+    @Value("${env}")
+    private String env;
+
+    @Override
+    public Message configEnvTestRest() {
+        return success(env);
     }
 
 }

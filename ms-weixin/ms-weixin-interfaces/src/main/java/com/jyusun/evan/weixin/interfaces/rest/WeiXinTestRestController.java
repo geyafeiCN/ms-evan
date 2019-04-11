@@ -25,4 +25,14 @@ public interface WeiXinTestRestController {
     @GetMapping("/test")
     Message weiXinTestRest();
 
+
+    /**
+     * 作用描述：
+     * - 微信服务RestTest接口
+     * @return
+     */
+    @ApiOperation(value = "微信服务rest测试")
+    @GetMapping("/print")
+    Message configEnvTestRest();
+
 }

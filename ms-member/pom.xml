@@ -23,6 +23,7 @@
     </modules>
 
     <dependencies>
+
         <dependency>
             <groupId>com.jyusun.evan.core</groupId>
             <artifactId>ms-core-common</artifactId>

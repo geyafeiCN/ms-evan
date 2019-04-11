@@ -19,7 +19,7 @@
     <modules>
         <module>ms-center</module>
         <module>ms-config</module>
-        <module>ms-gate</module>
+        <module>ms-gateway</module>
         <module>ms-xxljop</module>
         <module>ms-elk</module>
         <module>ms-zipkin</module>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.jyusun.evan</groupId>
+        <artifactId>ms-evan</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.jyusun.evan.commodity</groupId>
+    <artifactId>ms-commodity</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>ms-commodity</name>
+    <description>商品服务</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>ms-commodity-interfaces</module>
+        <module>ms-commodity-application</module>
+        <module>ms-commodity-domain</module>
+        <module>ms-commodity-infrastructure</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jyusun.evan.core</groupId>
+            <artifactId>ms-core-common</artifactId>
+            <version>${ms-core-common.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

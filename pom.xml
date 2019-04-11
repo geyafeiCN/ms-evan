@@ -25,6 +25,7 @@
         <module>ms-pay</module>
         <module>ms-weixin</module>
         <module>ms-member</module>
+        <module>ms-commodity</module>
         <module>ms-order</module>
         <module>ms-shopping</module>
         <module>ms-study</module>
@@ -57,11 +58,13 @@
         <ms-core-common.version>0.0.1-SNAPSHOT</ms-core-common.version>
         <ms-core-db.version>0.0.1-SNAPSHOT</ms-core-db.version>
 
-
         <!-- 微信服务版本信息 -->
-        <evan.weixin.version>0.0.1-SNAPSHOT</evan.weixin.version>
+        <ms-weixin.version>0.0.1-SNAPSHOT</ms-weixin.version>
         <!-- 会员服务版本信息 -->
-        <evan.member.version>0.0.1-SNAPSHOT</evan.member.version>
+        <ms-member.version>0.0.1-SNAPSHOT</ms-member.version>
+        <!-- 商品服务版本信息 -->
+        <ms-commodity.version>0.0.1-SNAPSHOT</ms-commodity.version>
+
     </properties>
 
     <dependencyManagement>

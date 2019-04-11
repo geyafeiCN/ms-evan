@@ -1,17 +1,21 @@
 server:
-    port: 9100 #启动端口
+    port: 9100 # 服务端口
 
 spring:
     application:
-        name: ms-config
+        name: ms-config #服务名称
     cloud:
         config:
             server:
                 git:
-                    uri: https://github.com/jyusun/ms-evan.git
-                    search-paths:
-                        - ms-basics/ms-config-file/
-                        - ms-basics/ms-config-file/**
+                    uri: https://github.com/jyusun/ms-evan.git #Git仓库地址
+                    search-paths:   #配置中心文件扫描路径
+                        - ms-basics/ms-config-file/    #扫描指定路径
+                        - ms-basics/ms-config-file/**  #通配符扫描文件夹下所有路径
+                    default-label: master  #分支标签
+                    #basedir:   #本地配置文件仓库默认路径
+
+#配置服务注册中心
 eureka:
     instance:
         statusPageUrlPath: /info

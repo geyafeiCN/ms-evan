@@ -1,0 +1,25 @@
+server:
+  port: 10300 #服务运行端口
+
+spring:
+  application:
+    name: ms-weixin #服务名称
+  cloud:
+    config:
+      discovery:
+        enabled: true #是否启用配置中心
+        service-id: ms-config #配置中心服务名称
+      name: weixin  #文件名如与服务名不一致需要配置此属性
+      profile: dev  # 环境标签：dev-开发 test-测试 prod-生产
+
+#分布式服务注册中心
+eureka:
+  instance:
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:9000}/eureka/
+
