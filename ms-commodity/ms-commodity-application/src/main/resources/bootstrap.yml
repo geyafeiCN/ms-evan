@@ -1,0 +1,13 @@
+server:
+  port: 10400 #服务端口
+
+spring:
+  application:
+    name: ms-commodity #服务名称
+  cloud:
+    config:
+      discovery:
+        enabled: true #是否启用配置中心
+        service-id: ms-config #配置中心服务名称
+      name: commodity  #文件名如与服务名不一致需要配置此属性
+      profile: dev  # 环境标签：dev-开发 test-测试 prod-生产

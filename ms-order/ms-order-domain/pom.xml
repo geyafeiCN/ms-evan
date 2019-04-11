@@ -3,28 +3,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.jyusun.evan</groupId>
-        <artifactId>ms-evan</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.4.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.jyusun.evan.order</groupId>
-    <artifactId>ms-order</artifactId>
+    <artifactId>ms-order-domain</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ms-order</name>
-    <description>订单服务</description>
-
-    <modules>
-        <module>ms-order-interfaces</module>
-        <module>ms-order-application</module>
-        <module>ms-order-domain</module>
-        <module>ms-order-infrastructure</module>
-    </modules>
+    <name>ms-order-domain</name>
+    <description>订单服务领域层</description>
 
     <dependencies>
         <dependency>
-            <groupId>com.jyusun.evan.core</groupId>
-            <artifactId>ms-core-common</artifactId>
-            <version>${ms-core-common.version}</version>
+            <groupId>com.jyusun.evan.order</groupId>
+            <artifactId>ms-order-infrastructure</artifactId>
+            <version>${ms-order.version}</version>
         </dependency>
     </dependencies>
 

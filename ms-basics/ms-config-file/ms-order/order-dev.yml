@@ -1,0 +1,7 @@
+env: dev  #环境：开发环境
+
+test:
+  test1: testpay
+
+test3:
+  test2: testpay2

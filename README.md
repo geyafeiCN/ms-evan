@@ -28,16 +28,16 @@
 │  ├─ 代码工厂
 │  │- ms-code-codefactory
 ------------------------------------------
-├─ ms-admin-后台管理服务
-│  │port:10100...10199
-│  ├─ 会员接口接口层
-│  │- ms-member-interfaces
-│  ├─ 会员应用层
-│  │- ms-member-application
-│  ├─ 会员领域层
-│  │- ms-member-domain
-│  ├─ 会员基础设施层
-│  │- ms-member-infrastructure
+├─ ms-pay-支付服务
+│  │
+│  ├─ 支付服务接口
+│  │- ms-online-api
+│  ├─ 阿里支付
+│  │- ms-pay-alipay
+│  ├─ 微信支付
+│  │- ms-pay-wechat
+│  ├─ 银联支付
+│  │- ms-pay-union
 ------------------------------------------
 ├─ ms-weixin-微信服务
 │  │port:10300...10399
@@ -51,38 +51,36 @@
 │  │- ms-weixin-infrastructure
 ├─ ms-member-会员服务
 │  │port:10400...10499
-│  ├─ 会员接口接口层
+│  ├─ 会员服务接口层
 │  │- ms-member-interfaces
-│  ├─ 会员应用层
+│  ├─ 会员服务应用层
 │  │- ms-member-application
-│  ├─ 会员领域层
+│  ├─ 会员服务领域层
 │  │- ms-member-domain
-│  ├─ 会员基础服务层
+│  ├─ 会员服务基础设施层
 │  │- ms-member-infrastructure
 ------------------------------------------
-├─ ms-pay-支付服务
-│  │
-│  ├─ 支付服务接口
-│  │- ms-online-api
-│  ├─ 阿里支付
-│  │- ms-pay-alipay
-│  ├─ 微信支付
-│  │- ms-pay-wechat
-│  ├─ 银联支付
-│  │- ms-pay-union
+├─ ms-ms-commodity-商品服务
+│  │port:10500...10599
+│  ├─ 商品服务接口层
+│  │- ms-commodity-interfaces
+│  ├─ 商品服务应用层
+│  │- ms-commodity-application
+│  ├─ 商品服务领域层
+│  │- ms-commodity-domain
+│  ├─ 商品服务基础设施层
+│  │- ms-commodity-infrastructure
 ------------------------------------------
-
 ├─ ms-order-订单服务
-│  │
-│  ├─ms-order-api-------------订单接口
-│  │
-│  ├─ms-order-impl------------订单实现
-------------------------------------------
-├─ ms-product-商品服务
-│  │
-│  ├─ms------------
-│  │
-│  ├─ms------------
+│  │port:10600...10699
+│  ├─ 订单服务接口层
+│  │- ms-order-interfaces
+│  ├─ 订单服务应用层
+│  │- ms-order-application
+│  ├─ 订单服务领域层
+│  │- ms-order-domain
+│  ├─ 订单服务基础设施层
+│  │- ms-order-infrastructure
 ------------------------------------------
 ├─ ms-search-搜索服务
 │  │

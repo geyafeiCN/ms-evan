@@ -64,6 +64,8 @@
         <ms-member.version>0.0.1-SNAPSHOT</ms-member.version>
         <!-- 商品服务版本信息 -->
         <ms-commodity.version>0.0.1-SNAPSHOT</ms-commodity.version>
+        <!-- 订单服务版本信息 -->
+        <ms-order.version>0.0.1-SNAPSHOT</ms-order.version>
 
     </properties>
 
