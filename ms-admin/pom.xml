@@ -11,7 +11,7 @@
     <artifactId>ms-admin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ms-admin</name>
-    <description>后台管理服务</description>
+    <description>管理服务</description>
 
     <build>
         <plugins>

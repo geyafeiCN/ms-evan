@@ -17,7 +17,7 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
-        <module>ms-test</module>
+        <module>ms-study-test</module>
     </modules>
 
     <build>

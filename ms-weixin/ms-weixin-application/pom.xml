@@ -19,20 +19,19 @@
         <dependency>
             <groupId>com.jyusun.evan.weixin</groupId>
             <artifactId>ms-weixin-interfaces</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${ms-weixin.version}</version>
         </dependency>
         <!-- 微信服务领域层-->
         <dependency>
             <groupId>com.jyusun.evan.weixin</groupId>
             <artifactId>ms-weixin-domain</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${ms-weixin.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-feign -->
+        <!-- spring-cloud-starter-openfeign   feign2.X改名 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
-            <version>1.4.6.RELEASE</version>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
         <!--Spring-Cloud-Eureka-Client 服务注册客户端依赖-->
@@ -44,6 +43,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-client</artifactId>
+        </dependency>
+        <!-- spring-cloud-starter-bus-amqp 消息总线 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
         </dependency>
 
     </dependencies>

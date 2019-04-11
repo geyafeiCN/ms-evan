@@ -26,12 +26,12 @@
             <version>${ms-member.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-feign -->
+        <!-- spring-cloud-starter-openfeign   feign2.X改名 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
-            <version>1.4.6.RELEASE</version>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+
         <!--Spring-Cloud-Eureka-Client 服务注册客户端依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
