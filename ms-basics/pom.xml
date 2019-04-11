@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jyusun.evan</groupId>
+        <artifactId>ms-evan</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.jyusun.evan.basics</groupId>
+    <artifactId>ms-basics</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>ms-basics</name>
+    <description>basics service group</description>
+
+    <modules>
+        <module>ms-center</module>
+        <module>ms-config</module>
+        <module>ms-gate</module>
+        <module>ms-xxljop</module>
+        <module>ms-elk</module>
+        <module>ms-zipkin</module>
+    </modules>
+
+
+</project>

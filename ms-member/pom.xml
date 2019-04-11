@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.jyusun.evan</groupId>
+        <artifactId>ms-evan</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.jyusun.evan.member</groupId>
+    <artifactId>ms-member</artifactId>
+    <name>ms-member</name>
+    <version>0.0.1-SNAPSHOT</version>
+    <description>会员服务</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>ms-member-interfaces</module>
+        <module>ms-member-application</module>
+        <module>ms-member-domain</module>
+        <module>ms-member-infrastructure</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jyusun.evan.core</groupId>
+            <artifactId>ms-core-common</artifactId>
+            <version>${evan.core.common.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

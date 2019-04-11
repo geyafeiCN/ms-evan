@@ -1,0 +1,23 @@
+server:
+    port: 9100 #启动端口
+
+spring:
+    application:
+        name: ms-config
+    cloud:
+        config:
+            server:
+                git:
+                    uri: https://github.com/jyusun/ms-evan.git
+                    search-paths:
+                        - ms-basics/ms-config-file/
+                        - ms-basics/ms-config-file/**
+eureka:
+    instance:
+        statusPageUrlPath: /info
+        healthCheckUrlPath: /health
+    client:
+        registerWithEureka: true
+        fetchRegistry: true
+        serviceUrl:
+            defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:9000}/eureka/

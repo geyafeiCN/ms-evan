@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--会员账户#jyusun#2019/02/26  15:20-->
+<mapper namespace="com.jyusun.evan.member.infrastructure.repository.mapper.UsersMapper" >
+
+    <!-- 当前对象映射关系 （除去通用部分）-->
+    <resultMap id="RequestResultMap" type="com.jyusun.evan.member.infrastructure.repository.po.UsersPO" extends="BaseMapper.BaseResultMap">
+        <result column="user_acct" property="userAcct" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result column="user_pass" property="userPass" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result column="nick_name" property="nickName" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result column="avatar_img" property="avatarImg" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result column="modify_account" property="modifyAccount" javaType="java.lang.Boolean" jdbcType="TINYINT"/>
+        <result column="account_status" property="accountStatus" javaType="java.lang.Integer" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <!-- 当前对象对应的数据库表名-->
+    <sql id="ThisTable" >
+        users
+    </sql>
+
+    <!-- 当前表中的列 （除去通用部分）-->
+    <sql id="ThisColumnList" >
+        user_acct,
+        user_pass,
+        nick_name,
+        avatar_img,
+        modify_account,
+        account_status
+    </sql>
+
+    <!-- 单条插入数据 -->
+    <insert id="insert" parameterType="com.jyusun.evan.member.infrastructure.repository.po.UsersPO" >
+        insert into <include refid="ThisTable"/>
+        set id = #{id}
+    </insert>
+
+    <!-- 修改数据 -->
+    <!--<update id="updateByPrimaryKey" parameterType="">-->
+        <!--update <include refid="ThisTable"/>-->
+        <!--where id = #{id}-->
+    <!--</update>-->
+
+    <!-- 根据ID查询 返回相应对象-->
+    <select id="selectOne" parameterType="java.lang.Long" resultMap="RequestResultMap">
+        select <include refid="ThisColumnList"/>,<include refid="BaseMapper.BaseColumnList"/>
+        from <include refid="ThisTable"/>
+        where id = #{id}
+    </select>
+
+    <!-- 根据ID删除当前对象 返回  成功:1-true 失败:0-false -->
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+        delete from <include refid="ThisTable"/>
+        where id = #{id}
+    </delete>
+</mapper>

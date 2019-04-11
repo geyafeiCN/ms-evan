@@ -1,0 +1,25 @@
+# Spring Cloud Eureka Client 通用配置
+eureka:
+  instance:
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
+
+#*Mapper.xml所在的路径
+mybatis:
+  mapper-locations:  classpath*:mybatis/**/*Mapper.xml
+
+
+# Spring Cloud Config Client 通用配置
+#spring:
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+#    default-property-inclusion: non_null
+#  cloud:
+#    config:
+#      uri: http://${CONFIG_HOST:localhost}:${CONFIG_PORT:8750}
+#      profile: dev   # dev：开发 test：测试 prod：生产
+#      lable: master  # 当config后端存储是Git时候,默认master分支

@@ -1,0 +1,35 @@
+server:
+  port: 8770 #Run Port
+spring:
+  cloud:
+    config:
+      discovery:
+        service-id: ms-config
+        enabled: true
+      label: master      # Git分支名称
+      name: ms-gateway   #配置中心文件名称
+      profile: dev       #配置中心文件后缀
+
+eureka:
+  instance:
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+    prefer-ip-address: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
+
+#URL路径完全转发
+url:
+  check:
+    right: 1
+
+logging:
+  level:
+    com.ms.gate: DEBUG
+
+feign:
+  httpclient:
+    enabled: true

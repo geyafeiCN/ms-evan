@@ -1,0 +1,20 @@
+#服务运行端口
+server:
+  port: 9000
+
+#服务名称
+spring:
+  application:
+    name: ms-center
+
+#服务注册中心配置
+eureka:
+  server:
+    enable-self-preservation: false #安全模式
+  environment: dev #开发模式
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+

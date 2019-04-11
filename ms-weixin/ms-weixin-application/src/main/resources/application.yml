@@ -1,0 +1,23 @@
+#服务运行端口
+server:
+  port: 10100
+
+#服务名称
+spring:
+  application:
+    name: ms-weixin
+
+swagger:
+  base-package: classpath*:com.jyusun.evan.weixin.interfaces
+  version: 1.0
+  title: 微信服务接口
+
+eureka:
+  instance:
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:9000}/eureka/
