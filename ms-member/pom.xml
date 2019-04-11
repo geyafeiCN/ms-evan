@@ -26,7 +26,7 @@
         <dependency>
             <groupId>com.jyusun.evan.core</groupId>
             <artifactId>ms-core-common</artifactId>
-            <version>${evan.core.common.version}</version>
+            <version>${ms-core-common.version}</version>
         </dependency>
     </dependencies>
 
